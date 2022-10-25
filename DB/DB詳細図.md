@@ -51,11 +51,17 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
-## m_shopImage
+## m_shopImage_id
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
+|画像ID|shop_image_ID|varchar(80)|○|○||
+
+## m_shopImage
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
 |画像ID|shop_image_ID|varchar(80)|○|○||
 |店画像|shop_image|varchar(80)||○||
 |最終変更ユーザーID|user_id|int(8)||○|○|
