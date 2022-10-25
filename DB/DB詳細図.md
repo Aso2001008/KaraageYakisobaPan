@@ -102,7 +102,7 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
-## m_shopExplanation
+## m_shopExplanationid
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
