@@ -123,6 +123,7 @@ package "Gohunt" as target_system {
   users     }--{      shopExplanation
   shopImage_id     }--{      shopExplanation
   shop     }--{      shopExplanation_id
+  shopExplanation_id     }--{      shopExplanation
   tag_id     }--{      shopExplanation
   tag     }--{      tag_id
   shopImage     }--{      users
