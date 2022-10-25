@@ -49,7 +49,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "タグidマスタ" as tag  <m_tag_id> <<M,MASTER_MARK_COLOR>> {
+    entity "タグidマスタ" as tag_id  <m_tag_id> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
         --
         #tag_id[FK]
@@ -117,6 +117,7 @@ package "Gohunt" as target_system {
   shopExplanationHistory     }--{      shopExplanation
   shopImage     }--{      shopExplanation
   tag     }--{      shopExplanation
+  tag     }--{      tag_id
   shop     }--{      shopExplanation
   shopExplanationHistory     }--{      users
   shopImage     }--{      users
