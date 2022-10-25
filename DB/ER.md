@@ -126,7 +126,8 @@ package "Gohunt" as target_system {
   tag     }--{      tag_id
   shopImage     }--{      users
   shop     }--{      users
-  shopExplanation     }--{      shopAddress
+  shopExplanation     }--{      shopAddress_id
+  shopAddress     }--{      shopAddress_id
   shop     }--{      shopImage_id
   shopImage     }--{      shopImage_id
   shop     }--{      shopAddress
