@@ -116,7 +116,7 @@ package "Gohunt" as target_system {
   users     }--{      shopExplanation
   shopExplanationHistory     }--{      shopExplanation
   shopImage     }--{      shopExplanation
-  tag     }--{      shopExplanation
+  tag_id     }--{      shopExplanation
   tag     }--{      tag_id
   shop     }--{      shopExplanation
   shopExplanationHistory     }--{      users
