@@ -33,11 +33,17 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
-## m_shopEvaluation
+## m_shopEvaluation_id
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
+|店評価ID|shop_evaluation_id|int(8)|○|○||
+
+## m_shopEvaluation
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
 |店評価ID|shop_evaluation_id|int(8)|○|○||
 |店の外見評価|shop_Appearance_evaluation|int(5)||○||
 |店の雰囲気評価|shop_atmosphere_evaluation|int(5)||○||
