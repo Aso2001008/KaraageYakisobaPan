@@ -68,6 +68,15 @@
 |登録日|reg_date|datetime||||
 |更新日|upd_date|datetime||||
 
+## m_tag_id
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|店ID|shop_id|int(8)|○|○||
+|タグID|tag_id|int(8)|○|○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+
 ## m_tag
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
