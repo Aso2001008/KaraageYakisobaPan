@@ -49,6 +49,14 @@ package "Gohunt" as target_system {
         upd_date
     }
     
+    entity "タグidマスタ" as tag  <m_tag_id> <<M,MASTER_MARK_COLOR>> {
+        +shop_id[PK]
+        --
+        #tag_id[FK]
+        reg_date
+        upd_date
+    }
+    
     entity "タグマスタ" as tag  <m_tag> <<M,MASTER_MARK_COLOR>> {
         +tag_id[PK]
         --
