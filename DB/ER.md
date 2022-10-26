@@ -38,15 +38,10 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップアドレスマスタid" as shopAddress_id  <m_shopAddress_id> <<M,MASTER_MARK_COLOR>> {
-        +shop_id[PK]
-        --
-        #shop_address_id[FK]
-    }
-    
     entity "ショップアドレスマスタ" as shopAddress  <m_shopAddress> <<M,MASTER_MARK_COLOR>> {
         +shop_address_id[PK]
         --
+        #shop_id[FK]
         shop_latitude
         shop_longitude
         shop_address
@@ -68,12 +63,6 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ説明テーブルid" as shopExplanation_id <m_shopExplanation_id> <<T,TRANSACTION_MARK_COLOR>> {
-        +shop_explanation_id [PK]
-        --
-        #shop_id[FK]
-    }
-    
     entity "ショップ説明テーブル" as shopExplanation <t_shopExplanation> <<T,TRANSACTION_MARK_COLOR>> {
         +shop_explanation_id [PK]
         --
@@ -87,30 +76,20 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ画面マスタid" as shopImage_id <m_shopImage_id> <<M,MASTER_MARK_COLOR>> {
+    entity "ショップ画像マスタ" as shopImage <m_shopImage> <<M,MASTER_MARK_COLOR>> {
         +shop_image_id [PK]
         --
         #shop_id[FK]
-    }
-    
-    entity "ショップ画面マスタ" as shopImage <m_shopImage> <<M,MASTER_MARK_COLOR>> {
-        +shop_image_id [PK]
-        --
         shop_image
         # user_id [FK]
         reg_date
         upd_date
     }
     
-    entity "ショップ評価マスタid" as shopEvaluation_id <m_shopEvaluation_id> <<M,MASTER_MARK_COLOR>> {
-        +shop_id[PK]
-        --
-        #shop_evaluation_id[FK]
-    }
-    
     entity "ショップ評価マスタ" as shopEvaluation <m_shopEvaluation> <<M,MASTER_MARK_COLOR>> {
         +shop_evaluation_id[PK]
         --
+        #shop_id[FK]
         shop_Appearance_evaluation
         shop_atmosphere_evaluation
         shop_taste_evaluation
@@ -121,22 +100,7 @@ package "Gohunt" as target_system {
    }
   
   users     }--{      shopExplanation
-  shopImage_id     }--{      shopExplanation
-  shop     }--{      shopExplanation_id
-  shopExplanation_id     }--{      shopExplanation
-  tag_id     }--{      shopExplanation
-  tag_id     }--{      shop
-  tag     }--{      tag_id
-  shopImage     }--{      users
-  shop     }--{      users
-  shopExplanation     }--{      shopAddress_id
-  shopAddress     }--{      shopAddress_id
-  shop     }--{      shopImage_id
-  shopImage     }--{      shopImage_id
-  shop     }--{      shopAddress
-  shopEvaluation_id    }--{    shopExplanation
-  shopEvaluation_id    }--{    shopEvaluation
-  shopEvaluation    }--{    users
+
   
   
 @enduml
