@@ -106,6 +106,8 @@ package "Gohunt" as target_system {
   tag_id     }--{      shopExplanation
   shopAddress     }--{      shopExplanation
   shopImage     }--{      shopExplanation
+  tag_id     }--{      tag
+  shopEvaluation    }--{      shop
   
 @enduml
 ```
