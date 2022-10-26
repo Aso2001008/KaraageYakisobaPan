@@ -105,6 +105,7 @@ package "Gohunt" as target_system {
   shop     }--{      shopExplanation
   tag_id     }--{      shopExplanation
   shopAddress     }--{      shop
+  shopAddress     }--{      shopExplanation
   shopImage     }--{      shopExplanation
   tag_id     }--{      tag
   shopEvaluation    }--{      shop
