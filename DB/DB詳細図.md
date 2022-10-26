@@ -77,6 +77,15 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
+## m_tag_id
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|店ID|shop_id|int(8)||○|○|
+|タグId|tag_id|varchar(80)|||○|
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+
 ## t_shopExplanation
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
@@ -84,8 +93,8 @@
 |店説明ID|shop_explanation_ID|int(8)|○|○||
 |店ID|shop_id|int(8)||○|○|
 |店説明|shop_explanation|varchar(200)||○||
-|画像ID|shop_image_ID|int(8)||○|○|
-|住所ID|shop_address_ID|int(8)||○|○|
+|画像ID|shop_image_iD|int(8)||○|○|
+|住所ID|shop_address_iD|int(8)||○|○|
 |タグID|tag_id|int(8)||○|○|
 |最終変更ユーザーID|user_id|int(8)||○|○|
 |更新日|up_date|datetime||||
