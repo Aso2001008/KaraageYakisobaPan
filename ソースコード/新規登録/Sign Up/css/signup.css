@@ -24,7 +24,7 @@ h2{
     box-sizing: border-box;
     position: absolute;
     width: 90vw;
-    height: 135vw;
+    height: 130vw;
     left: 5vw;
     top: 39vw;
 
@@ -60,6 +60,11 @@ h2{
     margin-top: 10vw;
     position: relative;
 }
+
+.Form h3{
+    font-size: 4.5vw;
+}
+
 a{
     text-decoration: none;
 }
@@ -87,10 +92,7 @@ a.newAco{
     top: -4vw;
     margin: 4vw;
     position: relative;
-
 }
-
-
 
 .SignUp{
     top: -5vw;
