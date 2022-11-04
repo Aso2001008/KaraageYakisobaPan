@@ -7,6 +7,8 @@
 </head>
 <body>
 <div class="page">
+
+    <div class="backimg"></div>
     <div class="img">
         <a class="back"><<</a>
     <img class="img" src="./img/Frame%2089.png">
@@ -26,8 +28,7 @@
                     <a class="accordion"></a>
                     <div class="box">
                         <form>
-                            <input type="text" placeholder="”店舗名”を入力"><br>
-                            <button type="submit" >検索</button>
+                            <input type="text" placeholder="地図"><br>
                         </form>
                     </div>
                 </div>
@@ -60,6 +61,6 @@
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="./js/shopinfo.js.js"></script>
+<script src="./js/shopinfo.js"></script>
 </body>
 </html>
