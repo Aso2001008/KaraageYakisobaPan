@@ -1,3 +1,12 @@
+.backimg{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    left: 0px;
+    top: 0px;
+
+    background: url(../img/backimg.png);
+}
 div.page{
     position: relative;
     width: 375px;
@@ -389,6 +398,8 @@ a.huni{
     padding: 3% 3% 3% 50px;
     transition: all .5s ease;
     width: 100%;
+    left: 157px;
+    top: 25px;
 }
 .accordion-space {
     top: 33px;
